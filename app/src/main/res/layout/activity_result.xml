@@ -1,0 +1,137 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/inputplayernamebg" />
+
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="284dp"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_background4"
+        android:fontFamily="@font/hobbit"
+        android:gravity="top|center"
+        android:paddingTop="30dp"
+        android:singleLine="true"
+        android:text="GOOD GAME!"
+        android:textColor="@color/black"
+        android:textSize="40sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
+
+        <TextView
+            android:id="@+id/playerName_tv_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text="Player Name"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/hobbit"
+            />
+
+        <TextView
+            android:id="@+id/textRes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text="Score"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/hobbit"/>
+
+        <TextView
+            android:id="@+id/cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:singleLine="true"
+            android:text="Category"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:fontFamily="@font/hobbit"
+            tools:ignore="DuplicateIds" />
+
+
+
+        <Button
+            android:id="@+id/review"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/newbutton2"
+            android:fontFamily="@font/hobbit"
+            android:onClick="reviewClick"
+            android:text="Review\nResults"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="50dp">
+
+            <Button
+                android:id="@+id/rcategory"
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:alpha="1"
+                android:background="@drawable/new_button"
+                android:onClick="playAgain"
+                android:text="Play Again"
+                android:textColor="@color/black"
+                android:fontFamily="@font/hobbit"
+                android:textSize="13sp"/>
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/rcontinue"
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="16dp"
+                android:layout_gravity="right"
+                android:background="@drawable/new_buttonred"
+                android:onClick="endGame"
+                android:text="Exit"
+                android:textColor="#000309"
+                tools:visibility="visible"
+                android:fontFamily="@font/hobbit"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

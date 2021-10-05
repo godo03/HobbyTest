@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thesis.let.webservicedemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/film"
+        android:label="Film Test"
+        android:roundIcon="@drawable/film"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".screens.HighScores"></activity>
+        <activity android:name=".screens.HighScoresAnime"></activity>
+        <activity android:name=".screens.HighScoresBooks"></activity>
+        <activity android:name=".screens.HighScoresSports"></activity>
+        <activity android:name=".screens.HighScoresVideoGames"></activity>
+        <activity android:name=".screens.Review" />
+        <activity android:name=".screens.PlayerNameScreen" />
+        <activity android:name=".screens.PlayerNameScreen2" />
+        <activity android:name=".screens.PlayerNameScreen3" />
+        <activity android:name=".screens.PlayerNameScreen4" />
+        <activity android:name=".screens.PlayerNameScreen5" />
+        <activity android:name=".screens.About" />
+        <activity android:name=".screens.How2Play" />
+        <activity android:name=".screens.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".screens.Home" />
+        <activity android:name=".screens.SelectCategory" />
+        <activity android:name=".screens.CategoryHS" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".MainActivity3" />
+        <activity android:name=".MainActivity4" />
+        <activity android:name=".MainActivity5" />
+        <activity android:name=".screens.ResultActivity" />
+        <activity android:name=".screens.ResultActivity2" />
+        <activity android:name=".screens.ResultActivity3" />
+        <activity android:name=".screens.ResultActivity4" />
+        <activity android:name=".screens.ResultActivity5" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

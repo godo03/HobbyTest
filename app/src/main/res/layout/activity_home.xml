@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/glitch" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp"
+        android:paddingTop="50dp">
+
+
+        <TextView
+            android:id="@+id/tvFilmTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="The\n HobbyTest"
+            android:gravity="center"
+            app:fontFamily="@font/hobbit"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            />
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="134dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/new_buttonred"
+            android:fontFamily="@font/hobbit"
+            android:onClick="clickPlay"
+            android:text="Play"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/instructions"
+            android:layout_width="134dp"
+            android:layout_height="65dp"
+            android:background="@drawable/new_buttonyellow"
+            android:onClick="clickHow2Play"
+            android:text="HOW TO PLAY"
+
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/hobbit"
+            android:textSize="13sp"/>
+
+        <Button
+            android:id="@+id/highscores"
+            android:layout_width="134dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/hobbit"
+            android:textSize="13sp"
+            android:background="@drawable/new_button"
+            android:onClick="clickHighScores"
+            android:text="HIGHSCORES" />
+
+
+        <Button
+            android:id="@+id/about"
+            android:layout_width="134dp"
+            android:layout_height="65dp"
+            android:background="@drawable/new_buttonblue"
+            android:onClick="clickAbout"
+            android:text="ABOUT"
+            android:fontFamily="@font/hobbit"
+            android:textSize="13sp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="200dp"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

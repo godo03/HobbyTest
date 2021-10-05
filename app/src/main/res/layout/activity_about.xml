@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#334d5d">
+
+
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="400dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_background2"
+        android:fontFamily="@font/hobbit"
+        android:gravity="center"
+        android:text="ABOUT \n\n HobbyTest is a quiz app that asks random questions about the hobby category of choice. It has both multiple choice and a true or false type of questions. Each question is imported from the internet through opentdb website "
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:fallbackLineSpacing="true"
+        android:lineSpacingExtra="5dp"/>
+
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="88dp"
+        android:layout_height="73dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="153dp"
+        android:src="@drawable/film" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        android:layout_marginTop="300dp">
+
+
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/actor"
+            android:gravity="center"
+            android:text="In partial fulfillment of Final Requirements \n in HCI"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold"
+             />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/actor"
+                android:gravity="right|center_vertical"
+                android:text="Developed By: \n Godwen Ortea \n 2nd year \n BSIT - IT22KA3 \n"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="168dp"
+                android:layout_height="161dp"
+                android:layout_gravity="center"
+                android:foreground="@drawable/rounded_fg"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/meh"
+
+                />
+
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/rcontinue"
+            android:layout_width="76dp"
+            android:layout_height="71dp"
+            android:layout_alignParentRight="true"
+            android:alpha="1"
+            android:background="#00000000"
+            android:layout_gravity="center"
+            android:onClick="endGame"
+            android:scaleType="fitXY"
+            android:src="@drawable/home"
+            android:textColor="#000309"
+            tools:layout_editor_absoluteX="176dp"
+            tools:layout_editor_absoluteY="625dp"
+            tools:visibility="visible"
+            android:layout_marginBottom="55dp"
+            android:layout_marginTop="50dp"/>
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

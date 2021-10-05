@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="376dp"
+            android:layout_height="156dp"
+            android:layout_gravity="center"
+            android:background="@drawable/custom_background2"
+            android:fontFamily="@font/hobbit"
+            android:gravity="center"
+            android:text="Please Select \na Category"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+
+
+        <Button
+            android:id="@+id/film"
+            android:layout_width="134dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/new_buttonred"
+            android:fontFamily="@font/hobbit"
+            android:onClick="mainActivity"
+            android:text="film"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/books"
+            android:layout_width="134dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/new_buttonorange"
+            android:fontFamily="@font/hobbit"
+            android:onClick="mainActivity2"
+            android:text="books"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/videogames"
+            android:layout_width="134dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/new_button"
+            android:fontFamily="@font/hobbit"
+            android:onClick="mainActivity3"
+            android:text="videogames"
+            android:textSize="13sp" />
+
+
+        <Button
+            android:id="@+id/sports"
+            android:layout_width="134dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/new_buttonblue"
+            android:fontFamily="@font/hobbit"
+            android:onClick="mainActivity4"
+            android:text="sports"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/anime"
+            android:layout_width="134dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/new_buttonyellow"
+            android:fontFamily="@font/hobbit"
+            android:onClick="mainActivity5"
+            android:text="MANGA/anime"
+            android:textSize="13sp" />
+
+        <ImageButton
+            android:id="@+id/image"
+            android:layout_width="76dp"
+            android:layout_height="71dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="28dp"
+            android:alpha="1"
+            android:background="#00000000"
+            android:onClick="endGame"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/home"
+            android:textColor="#000309"
+            android:layout_marginTop="20dp"
+            tools:visibility="visible" />
+
+
+
+
+    </LinearLayout>
+</ScrollView>
